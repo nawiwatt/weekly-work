@@ -1,23 +1,21 @@
 #include<stdio.h>
 int main()
 {
-	int a,b,i;
+	int a,i;
 	int sum = 0;
-	scanf("%d",&a);
+	scanf_s("%d",&a);
 	for(i=3;i<a;i=i+3)
 	{
-		printf("%d ",i);
 		sum=sum+i;
-		if (a-i<=3)
-		{
-			printf("\n");
-		}
 	}
 	for(i=5;i<a;i=i+5)
 	{
-		printf("%d ",i);
 		sum=sum+i;
 	}
-	printf("\nsum = %d",sum);
+	for(i=15;i<a;i=i+15)
+	{
+		sum=sum-i;
+	}
+	printf("sum = %d",sum);
 	return 0;
 }
