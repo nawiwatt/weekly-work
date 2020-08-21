@@ -3,7 +3,7 @@ int main()
 {
 	long a,b,i;
 	long c = 1;
-	scanf("%ld%ld",&a,&b);
+	scanf_s("%ld%ld",&a,&b);
 	for(i=2;i<=a;i++)
 	{
 		if(a%i==0 && b%i==0)
