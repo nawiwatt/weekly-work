@@ -1,16 +1,19 @@
 #include<stdio.h>
 int main()
 {
-	long long a,i;
-	scanf("%lld",&a);
+	long a,b,i;
+	long c = 1;
+	scanf("%ld%ld",&a,&b);
 	for(i=2;i<=a;i++)
 	{
-		if(a%i==0)
+		if(a%i==0 && b%i==0)
 		{
-			a=a/i;
-			printf("%lld ",i);
-			i=1;
+			if(c < i)
+			{
+				c = i;
+			}
 		}		
 	}
+	printf("%ld",c);
 	return 0;
 }
