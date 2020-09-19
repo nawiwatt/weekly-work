@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+	int a,i,j;
+	scanf_s("%d",&a);
+	if(a%2==0)
+	{
+		for(i=1;i<=a/2;i++)
+		{
+			for(j=1;j<a;j++)
+			{
+				if(j-i==a/2-1||i+j==a/2+1)
+				{
+					printf("*");
+				}
+				else
+				{
+					printf("-");
+				}
+			}
+			printf("\n");
+		}
+		for(i=1;i<=a/2;i++)
+		{
+			for(j=1;j<a;j++)
+			{
+				if(i-j==0||i+j==a)
+				{
+					printf("*");
+				}
+				else
+				{
+					printf("-");
+				}
+			}
+			printf("\n");
+		}	
+	}
+	else
+	{
+		for(i=0;i<a;i++)
+		{
+			for(j=0;j<a;j++)
+			{
+				if(i+j==a/2||j-i==a/2||i-j==a/2||j+i==a*3/2-1)
+				{
+					printf("*");
+				}
+				else
+				{
+					printf("-");
+				}
+			}
+			printf("\n");
+		}
+	}
+	return 0;
+}
