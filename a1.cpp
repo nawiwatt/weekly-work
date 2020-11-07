@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-int main()
+void working ()
 {
 	struct fighting
 	{
@@ -42,5 +42,9 @@ int main()
 			std::cout << player[i].name << std::endl ;
 		}
 	}
+}
+int main()
+{
+    working();
 	return 0;
 }
