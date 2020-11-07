@@ -4,7 +4,7 @@ int main ()
 	int i,n=0,a[100000],a1=0,a2=0,a3=0,a4=0;
 	for(i=0;i<100000;i++)
 	{
-		scanf_s("%d",&a[i]);
+		scanf("%d",&a[i]);
 		if(a[i]!=1&&a[i]!=0)
 		{
 			break;
